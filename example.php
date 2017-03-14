@@ -7,7 +7,7 @@ $curlx = new LSCurlX;
 // maintain 10 curl connections until it finish.
 // set 7 seconds process time for each request
 // set curl option for each request
-$curlx->setMaxConnection(10)->setTimeout(7)->setGlobal('option', array(
+$curlx->setMaxConnection(15)->setTimeout(7)->setGlobal('option', array(
 	CURLOPT_FOLLOWLOCATION => false,
 	CURLOPT_FAILONERROR => false,
 	CURLOPT_SSL_VERIFYPEER => false,
