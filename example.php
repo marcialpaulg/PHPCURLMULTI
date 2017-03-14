@@ -4,7 +4,7 @@ require 'LSCurlX.class.php';
 
 $curlx = new LSCurlX;
 
-// maintain 10 curl connections until it finish.
+// maintain 15 curl connections until it finish.
 // set 7 seconds process time for each request
 // set curl option for each request
 $curlx->setMaxConnection(15)->setTimeout(7)->setGlobal('option', array(
